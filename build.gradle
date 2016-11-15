@@ -87,3 +87,4 @@ small {
 //    }
 
 //}
+//        classpath 'net.wequick.tools.build:gradle-small:1.1.0-beta3'

@@ -7,10 +7,14 @@ import android.widget.Toast;
 
 import net.wequick.small.Small;
 
-/**
- * An example launcher activity that setUp the Small bundles and launch the main plugin.
+/*
+ * CreateDate:2016/11/15
+ * Author:SmileChen
+ * Version: 1.0
+ * Description: Nothing
+ * Revision Record: Nothing
  */
-public class LaunchActivity extends Activity {
+public class SmallActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +29,10 @@ public class LaunchActivity extends Activity {
         Small.setUp(this, new Small.OnCompleteListener() {
             @Override
             public void onComplete() {
-                if (Small.openUri("main", LaunchActivity.this)) {
+                if (Small.openUri("main", SmallActivity.this)) {
                     finish();
                 } else {
-                    Toast.makeText(LaunchActivity.this,
+                    Toast.makeText(SmallActivity.this,
                             "Open failed, see log for detail!",
                             Toast.LENGTH_LONG).show();
                 }

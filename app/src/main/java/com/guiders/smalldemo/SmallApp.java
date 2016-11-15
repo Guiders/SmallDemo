@@ -5,7 +5,11 @@ import android.app.Application;
 import net.wequick.small.Small;
 
 /**
- * The host application for Small
+ * CreateDate:2016/11/15
+ * Author:SmileChen
+ * Version: 1.0
+ * Description: The host application for Small
+ * Revision Record: Nothing
  */
 public class SmallApp extends Application {
 
