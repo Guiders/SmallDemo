@@ -1,0 +1,89 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'net.wequick.tools.build:gradle-small:1.1.0-beta3'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+apply plugin: 'net.wequick.small'
+
+small {
+    aarVersion = "1.1.0-beta7"
+}
+//
+
+//
+
+////-------------------------------------------------------------------
+
+//// Small plugin
+
+////
+
+//// Cannot automatically merge the buildscript in Android Studio 2.0+,
+
+//// uncomment this section and sync the project to go into force.
+
+////-------------------------------------------------------------------
+
+//
+
+//buildscript  {
+
+//    dependencies {
+
+//
+
+//    }
+
+//}
+
+//
+
+//apply plugin: 'net.wequick.small'
+
+//
+
+//small {
+
+//    // Whether build all the bundles to host assets.
+
+//    buildToAssets = false
+
+//
+
+//    // The compiling `net.wequick.small:small` aar version.
+
+//    aarVersion = "1.1.0-beta7"
+
+//
+
+//    // The project-wide Android version configurations
+
+//    android {
+
+//        compileSdkVersion = 25
+
+//        buildToolsVersion = "25.0.0"
+
+//        supportVersion = "25.+" // replace this with an explicit value
+
+//    }
+
+//}
