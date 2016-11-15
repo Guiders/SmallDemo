@@ -1,1 +1,1 @@
-include ':app', ':app.main', ':app.user'
+include ':app'
